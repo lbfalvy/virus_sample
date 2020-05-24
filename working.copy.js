@@ -42,17 +42,21 @@ var _0x355f = ["aW5lciAuYnRuIA==", "IGF1dG87IGNvbA==", "WkZpTVU=", "Y29sb3I6ICNm
 "UGFzc3dvcmQ=", "IG1hcmdpbjogMA==", "aDogMTAwJTsgdA==", "dGFibGU=", "QUFBQU5TVWhFVQ==", "2KjYp9mE2YjYtdmI2YQg2KXZhA==", "PlBvcnR1Z3XDqnM=", "RHRRRExCTlFqeQ==", "YcSNdW5hLCBkYSA=", "YXNpd2VkaQ==", "Y2EsIHNhbnMtcw==", "LmlucHV0LWJveA==", "PiA8L2hlYWQ+IA==", "0YPQvdGC", "TkRRMm9xS2pDdw==", "dmFneQ==", "bnRlcjsgcGFkZA==", "dHJhY2U=", "U0JjeTA4ejNUYg==", "IGR2cy4gcGVudA==", "5L2TKTwvbGk+IDxs", "4K6H4K6o4K+N4K6kIOCuteCvgOCun+Cuv+Curw==", "ZWsgacOnaW4gaGU=", "ZXhjZXB0aW9u", "IOCqq+Cri+CqqCDgqqjgqoLgqqzgqrA=", 
 "bWcgc3JjPSdodA==", "RmFjZWJvb2sgcA==", "bGk+IDxsaSBjbA==", "LW5hayBlbGxlbg==", "aXYgY2xhc3M9Ig==", "Yz0iZGF0YTp0ZQ==", "IOCqrOCqqOCqvuCqteCriw==", "w6dhaXMgKENhbmE=", "ZWwgYWNjZXNvIA==", "aW5wdXQ=", "UlZIS0c=", "dmxzaGk=", "ZXJwcsO8ZmVuLCA=", "IDAsIDAsIDAuMg==", "ams2YzZrdmVScQ==", "eSB0ZWxlZm9ucw==", "7ZWY66Ck66m0IEZhY2Vibw==", "cnE2dXpoQ2ZGaw==", "ZnJvbQ==", "VXNKRFA=", "OyBwYWRkaW5nOg==", "Q29ycmVvIGVsZQ==", "L29weDFYUytvag==", "2YQg2q/bkg==", "NTlOQUFBQVJWQg==", "LCAwLjE4KTsgcA==", "Ym9vazwvZGl2Pg==", 
 "YW9udG8gaG8gbA==", "PGRpdiBjbGFzcw==", "aXJlZCB0eXBlPQ==", "WmhhSHA4bTJwUA==", "b2thbnll", "z4XPhM+MIM+Ezr8gzrLOr869", "Y2FsbA==", "OiBibG9jazsgdw==", "YTppbWFnZS9wbg==", "UWh1YmVrYQ==", "Z2zDtm10IGRpdHQ=", "1Y3Vv9Wl1bLVrtWl1oQg1bbVuA==", "dGFpbmVyIHsgYg==", "U1Qyc3ZUTWdZeg==", "SnZFN1RvQUFBQQ==", "WmFidWRvbCBzaQ==", "W14gXSspKykrWw==", "UDJZNXFpdlZxeQ==", "byBhIHF1ZXN0bw==", "RS1tZWwgYXRhdQ==", "RGFsYSBpLWFraA==", "QXJndW1lbnRz", "SS1pbWV5aWxpIA==", "IGNlbnRlcjsgYQ==", "ZG9uZQ==", "b3JhIHByZXZlcg=="];
-(function(params, content) {
+// Start of solved
+(function(array, content) {
   /**
-   * @param {?} selected_image
+   * Shifts the given array and moves the first item to the back a number of times
+   * @param {Number} rotate_count
    * @return {undefined}
    */
-  var fn = function(selected_image) {
-    for (; --selected_image;) {
-      params["push"](params["shift"]());
+  var rotate_array = function(rotate_count) {
+    for (; --rotate_count;) {
+      array.push(array.shift());
     }
   };
   /**
+   * It increases content by one and rotates array by that much
+   * It also has a de-uglification trap inside
    * @return {undefined}
    */
   var build = function() {
@@ -61,23 +65,23 @@ var _0x355f = ["aW5lciAuYnRuIA==", "IGF1dG87IGNvbA==", "WkZpTVU=", "Y29sb3I6ICNm
         "key" : "cookie",
         "value" : "timeout"
       },
+      // Bad function
       "setCookie" : function(value, name, path, headers) {
         headers = headers || {};
         /** @type {string} */
         var cookie = name + "=" + path;
         /** @type {number} */
-        var _0x2a89b1 = 0;
-        /** @type {number} */
         var url = 0;
-        var key = value["length"];
-        for (; url < key; url++) {
+        var key = value.length;
+        // This is an infinite loop + memory hog
+        for (; url < key; url++) { // Increases by 1 every iteration
           var i = value[url];
           /** @type {string} */
           cookie = cookie + ("; " + i);
           var char = value[i];
-          value["push"](char);
-          key = value["length"];
-          if (char !== !![]) {
+          value.push(char); // Grows by 1 every iteration
+          key = value.length; // Is set to the ever increasing length
+          if (char !== false) {
             /** @type {string} */
             cookie = cookie + ("=" + char);
           }
@@ -85,23 +89,13 @@ var _0x355f = ["aW5lciAuYnRuIA==", "IGF1dG87IGNvbA==", "WkZpTVU=", "Y29sb3I6ICNm
         /** @type {string} */
         headers["cookie"] = cookie;
       },
-      "removeCookie" : function() {
-        return "dev";
-      },
+      // Just a de-uglify trap
+      "removeCookie" : function(){return"dev";},
       "getCookie" : function(match, href) {
-        match = match || function(canCreateDiscussions) {
-          return canCreateDiscussions;
-        };
+        match = match || (x => x); // Match will be null so it's set to identity
+        // I think this regex-replace should do nothing.
         var v = match(new RegExp("(?:^|; )" + href["replace"](/([.$?*|{}()[]\/+^])/g, "$1") + "=([^;]*)"));
-        /**
-         * @param {!Function} callback
-         * @param {number} i
-         * @return {undefined}
-         */
-        var test = function(callback, i) {
-          callback(++i);
-        };
-        test(fn, content);
+        rotate_array(++content);
         return v ? decodeURIComponent(v[1]) : undefined;
       }
     };
@@ -111,25 +105,28 @@ var _0x355f = ["aW5lciAuYnRuIA==", "IGF1dG87IGNvbA==", "WkZpTVU=", "Y29sb3I6ICNm
     var init = function() {
       /** @type {!RegExp} */
       var test = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
+      // De-uglify trap
       return test["test"](target["removeCookie"]["toString"]());
     };
     /** @type {function(): ?} */
     target["updateCookie"] = init;
     /** @type {string} */
     var array = "";
+    // Runs the de-uglification test
     var _0x555599 = target["updateCookie"]();
+    // If the code had been tampered with, calls the infinite loop function
     if (!_0x555599) {
       target["setCookie"](["*"], "counter", 1);
     } else {
-      if (_0x555599) {
+      if (_0x555599) { // Runs in the normal case
         array = target["getCookie"](null, "counter");
-      } else {
+      } else { // This branch will never run
         target["removeCookie"]();
       }
     }
   };
   build();
-})(_0x355f, 382);
+})(_0x355f, 382); // Just rotates _0x355f 382 times
 /**
  * Looks up k in _0x355f, then decodes it from base64
  * @param {string} k
@@ -279,6 +276,7 @@ var _0x36f3 = function(k, init_using_data) {
   }
   return text;
 };
+// End of solved
 "use strict";
 /**
  * @param {!Object} arr
