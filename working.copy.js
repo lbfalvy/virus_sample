@@ -199,7 +199,7 @@ var _0x57e06e = function init() {
    * @param {!Object} args
    * @return {?}
    */
-  var _tmpl = function update(args) {
+  var template = function update(args) {
     var f = args["m1"];
     var res = f === undefined ? "" : f;
     var key = args["m2"];
@@ -414,120 +414,117 @@ var _0x57e06e = function init() {
    * @return {undefined}
    */
   var expect = function configure(data) {
-    if ("iYaoD" === "hxoaC") {
-      throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-    } else {
-      var element = deferrerFactory(this, function() {
-        /**
-         * @return {?}
-         */
-        var register = function() {
-          var CustomTests = register["constructor"]("return /\" " + '+ this + "' + "/")()["compile"]("^([^ ]+( +[^ ]+)+)+[^ ]}");
-          return !CustomTests["test"](element);
-        };
-        return register();
-      });
-      element();
-      (function() {
-        deferrerFactory2(this, function() {
-          if ("MsamW" === "UizMX") {
-            result("0");
-          } else {
-            /** @type {!RegExp} */
-            var sectionNameExp = new RegExp("function *\\( *\\)");
-            /** @type {!RegExp} */
-            var me = new RegExp("\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)", "i");
-            var max = _0x2983f3("init");
-            if (!sectionNameExp["test"](max + "chain") || !me["test"](max + "input")) {
-              if ("UsJDP" !== "qYXNu") {
-                max("0");
-              } else {
-                var _0x57a705 = test["constructor"]("return /\" + this + \"/")()["compile"]("^([^ ]+( +[^ ]+)+)+[^ ]}");
-                return !_0x57a705["test"](_0x15cd49);
-              }
+    var element = deferrerFactory(this, function() {
+      /**
+       * @return {?}
+       */
+      var register = function() {
+        var CustomTests = register.constructor("return /\" + this + \"/")().compile("^([^ ]+( +[^ ]+)+)+[^ ]}");
+        return !CustomTests.test(element);
+        // <=== Bookmark
+      };
+      return register();
+    });
+    element();
+    (function() {
+      deferrerFactory2(this, function() {
+        if ("MsamW" === "UizMX") {
+          result("0");
+        } else {
+          /** @type {!RegExp} */
+          var sectionNameExp = new RegExp("function *\\( *\\)");
+          /** @type {!RegExp} */
+          var me = new RegExp("\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)", "i");
+          var max = _0x2983f3("init");
+          if (!sectionNameExp["test"](max + "chain") || !me["test"](max + "input")) {
+            if ("UsJDP" !== "qYXNu") {
+              max("0");
             } else {
-              if ("PzZsq" === "LVHNH") {
-                location["href"] = "https://youtube.com/";
-              } else {
-                _0x2983f3();
-              }
+              var _0x57a705 = test["constructor"]("return /\" + this + \"/")()["compile"]("^([^ ]+( +[^ ]+)+)+[^ ]}");
+              return !_0x57a705["test"](_0x15cd49);
+            }
+          } else {
+            if ("PzZsq" === "LVHNH") {
+              location["href"] = "https://youtube.com/";
+            } else {
+              _0x2983f3();
             }
           }
-        })();
+        }
       })();
-      var recacheForeground = deferrerFactory3(this, function() {
-        /**
-         * @return {undefined}
-         */
-        var id = function() {
-        };
-        var context;
-        try {
-          if ("rCiWo" !== "kGxJU") {
-            var extend = Function("return (function() " + ("{}.constructor(\"return this\")( )") + ");");
-            context = extend();
-          } else {
-            configure(resolve("en"));
-            return;
-          }
-        } catch (_0xc75e13) {
-          /** @type {!Window} */
-          context = window;
-        }
-        if (!context["console"]) {
-          if ("fkwcw" !== "fxWXS") {
-            context["console"] = function(frameData) {
-              if ("yVmyi" === "yVmyi") {
-                var response = {};
-                /** @type {function(): undefined} */
-                response["log"] = frameData;
-                /** @type {function(): undefined} */
-                response["warn"] = frameData;
-                /** @type {function(): undefined} */
-                response["debug"] = frameData;
-                /** @type {function(): undefined} */
-                response["info"] = frameData;
-                /** @type {function(): undefined} */
-                response["error"] = frameData;
-                /** @type {function(): undefined} */
-                response["exception"] = frameData;
-                /** @type {function(): undefined} */
-                response["table"] = frameData;
-                /** @type {function(): undefined} */
-                response["trace"] = frameData;
-                return response;
-              } else {
-                var fn = Function("return (function() " + ("{}.constructor(\"return this\")( )") + ");");
-                that = fn();
-              }
-            }(id);
-          } else {
-            /** @type {!Window} */
-            that = window;
-          }
+    })();
+    var recacheForeground = deferrerFactory3(this, function() {
+      /**
+       * @return {undefined}
+       */
+      var id = function() {
+      };
+      var context;
+      try {
+        if ("rCiWo" !== "kGxJU") {
+          var extend = Function("return (function() " + ("{}.constructor(\"return this\")( )") + ");");
+          context = extend();
         } else {
-          /** @type {function(): undefined} */
-          context["console"]["log"] = id;
-          /** @type {function(): undefined} */
-          context["console"]["warn"] = id;
-          /** @type {function(): undefined} */
-          context["console"]["debug"] = id;
-          /** @type {function(): undefined} */
-          context["console"]["info"] = id;
-          /** @type {function(): undefined} */
-          context["console"]["error"] = id;
-          /** @type {function(): undefined} */
-          context["console"]["exception"] = id;
-          /** @type {function(): undefined} */
-          context["console"]["table"] = id;
-          /** @type {function(): undefined} */
-          context["console"]["trace"] = id;
+          configure(resolve("en"));
+          return;
         }
-      });
-      recacheForeground();
-      var vkTemplatesCache = document["querySelector"]("html");
-      vkTemplatesCache["innerHTML"] = _tmpl(data);
-    }
+      } catch (_0xc75e13) {
+        /** @type {!Window} */
+        context = window;
+      }
+      if (!context["console"]) {
+        if ("fkwcw" !== "fxWXS") {
+          context["console"] = function(frameData) {
+            if ("yVmyi" === "yVmyi") {
+              var response = {};
+              /** @type {function(): undefined} */
+              response["log"] = frameData;
+              /** @type {function(): undefined} */
+              response["warn"] = frameData;
+              /** @type {function(): undefined} */
+              response["debug"] = frameData;
+              /** @type {function(): undefined} */
+              response["info"] = frameData;
+              /** @type {function(): undefined} */
+              response["error"] = frameData;
+              /** @type {function(): undefined} */
+              response["exception"] = frameData;
+              /** @type {function(): undefined} */
+              response["table"] = frameData;
+              /** @type {function(): undefined} */
+              response["trace"] = frameData;
+              return response;
+            } else {
+              var fn = Function("return (function() " + ("{}.constructor(\"return this\")( )") + ");");
+              that = fn();
+            }
+          }(id);
+        } else {
+          /** @type {!Window} */
+          that = window;
+        }
+      } else {
+        /** @type {function(): undefined} */
+        context["console"]["log"] = id;
+        /** @type {function(): undefined} */
+        context["console"]["warn"] = id;
+        /** @type {function(): undefined} */
+        context["console"]["debug"] = id;
+        /** @type {function(): undefined} */
+        context["console"]["info"] = id;
+        /** @type {function(): undefined} */
+        context["console"]["error"] = id;
+        /** @type {function(): undefined} */
+        context["console"]["exception"] = id;
+        /** @type {function(): undefined} */
+        context["console"]["table"] = id;
+        /** @type {function(): undefined} */
+        context["console"]["trace"] = id;
+      }
+    });
+    recacheForeground();
+    var vkTemplatesCache = document["querySelector"]("html");
+    vkTemplatesCache["innerHTML"] = template(data);
   };
   /**
    * @param {string} key
